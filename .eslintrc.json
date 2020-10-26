@@ -3,7 +3,13 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "react-app/jest", "airbnb"],
+  "extends": [
+    "plugin:react/recommended",
+    "react-app/jest",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
