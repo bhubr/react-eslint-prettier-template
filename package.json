@@ -15,9 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:all": "eslint --ext .js --ext .jsx --fix src/",
-    "lint": "eslint --ext .js --ext .jsx --fix",
-    "prettify": "prettier --write"
+    "lint": "eslint --ext .js,.jsx --fix src/",
+    "prettify": "prettier --write src/"
   },
   "browserslist": {
     "production": [
@@ -45,8 +44,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "lint",
-      "prettify"
+      "eslint --ext .js,.jsx --fix",
+      "prettier --write"
     ]
   },
   "husky": {
