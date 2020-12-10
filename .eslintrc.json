@@ -19,5 +19,13 @@
   },
   "plugins": ["react"],
   "rules": {
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "react/jsx-filename-extension": "warn",
+    "react/no-unescaped-entities": "warn",
+    "react/prop-types": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }
